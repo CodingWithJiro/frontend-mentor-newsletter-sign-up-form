@@ -37,7 +37,7 @@ Created as part of the building challenges from [Frontend Mentor](https://www.fr
 
 ## 🔍 Overview
 
-WHAT THIS PROJECT CONTAINS WITH 1-2 PARAGRAPHS WITH 2-3 SENTENCES EACH.
+INSERT PROJECT OVERVIEW (1-2 PARAGRAPHS)
 
 ---
 
