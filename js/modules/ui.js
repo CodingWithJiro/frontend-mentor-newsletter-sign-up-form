@@ -95,7 +95,12 @@ function addCheckIconsHTML() {
   });
 }
 
+function addSuccessIconSVG() {
+  thanksElement.insertAdjacentHTML("afterbegin", successIconSVG);
+}
+
 export function initUI() {
   addThemeHTML();
   addCheckIconsHTML();
+  addSuccessIconSVG();
 }
