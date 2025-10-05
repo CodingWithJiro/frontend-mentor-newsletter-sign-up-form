@@ -93,28 +93,88 @@
       </a>
 
       <div class="theme"></div>
+
+      <h1 class="header__title sr-only">Newsletter Sign-Up Form</h1>
     </header>
 
     <main class="main" id="main">
-      <!-- Sign-up form start -->
+      <div class="main__container">
+        <section class="card">
+          <picture class="card__picture">
+            <source
+              media="(min-width: 64rem)"
+              srcset="./assets/img/illustration-sign-up-desktop_400x593.svg"
+            />
 
-      Stay updated! Join 60,000+ product managers receiving monthly updates on:
-      Product discovery and building what matters Measuring to ensure updates
-      are a success And much more! Email address email@company.com Subscribe to
-      monthly newsletter
+            <source
+              media="(min-width: 48rem)"
+              srcset="./assets/img/illustration-sign-up-tablet_528x360.svg"
+            />
 
-      <!-- Sign-up form end -->
+            <img
+              class="card__hero"
+              src="./assets/img/illustration-sign-up-mobile_375x284.svg"
+              alt=""
+            />
+          </picture>
 
-      <!-- Success message start -->
+          <div class="card__content">
+            <h2 class="card__title">Stay updated!</h2>
 
-      Thanks for subscribing! A confirmation email has been sent to
-      ash@loremcompany.com. Please open it and click the button inside to
-      confirm your subscription. Dismiss message
+            <p class="card__description">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
 
-      <!-- Success message end -->
+            <ul class="card__features">
+              <li class="card__list">
+                <span class="card__list-text">
+                  Product discovery and building what matters
+                </span>
+              </li>
+
+              <li class="card__list">
+                <span class="card__list-text">
+                  Measuring to ensure updates are a success
+                </span>
+              </li>
+
+              <li class="card__list">
+                <span class="card__list-text"> And much more! </span>
+              </li>
+            </ul>
+
+            <form class="card__form">
+              <label class="card__label" for="email">Email address</label>
+
+              <input
+                type="email"
+                class="card__input"
+                id="email"
+                name="email"
+                placeholder="email@company.com"
+                required
+              />
+
+              <button class="card__subscribe" type="submit">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <section class="thanks sr-only">
+          <h2 class="thanks__title">Thanks for subscribing!</h2>
+
+          <p class="thanks__content">
+            A confirmation email has been sent to
+            <span class="thanks__email">ash@loremcompany.com</span>. Please open
+            it and click the button inside to confirm your subscription.
+          </p>
+
+          <button class="thanks__dismiss" type="button">Dismiss message</button>
+        </section>
+      </div>
     </main>
-
-    <footer class="footer"></footer>
 
     <script type="module" src="./js/index.js"></script>
   </body>
