@@ -65,6 +65,13 @@ function addThemeHTML() {
   theme.innerHTML = themeIconLightHTML + themeIconDarkHTML + themeButtonHTML;
 }
 
+function addCheckIconsHTML() {
+  listElements.forEach((list) => {
+    list.insertAdjacentHTML("afterbegin", checkIconList);
+  });
+}
+
 export function initUI() {
   addThemeHTML();
+  addCheckIconsHTML();
 }
