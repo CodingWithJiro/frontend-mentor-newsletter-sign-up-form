@@ -1,4 +1,4 @@
-# 💻 Newsletter Sign-Up Form
+# Newsletter Sign-Up Form
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -22,7 +22,7 @@
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%207-blue)
 ![Views](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.frontend-mentor-newsletter-sign-up-form&left_text=repo%20views)
 
-## ℹ️ ADD PROJECT SUBTITLE
+## ADD PROJECT SUBTITLE
 
 | _Mobile Preview (375x812)_                                   | _Desktop Preview (1440x960)_                                    |
 | ------------------------------------------------------------ | --------------------------------------------------------------- |
@@ -35,19 +35,19 @@ Created as part of the building challenges from [Frontend Mentor](https://www.fr
 
 ---
 
-## 🔍 Overview
+## Overview
 
 INSERT PROJECT OVERVIEW (1-2 PARAGRAPHS)
 
 ---
 
-## ✨ Features
+## Features
 
 INSERT LIST OF PROJECT FEATURES
 
 ---
 
-## 🔀 Development Workflow
+## Development Workflow
 
 [![Network Graph](./assets/img/network-graph.png)](https://github.com/CodingWithJiro/frontend-mentor-newsletter-sign-up-form/network)
 
@@ -61,13 +61,13 @@ _This ensures I maintain a professional workflow, even as a solo developer._
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 INSERT LIST OF WHAT I LEARNED MAKING THIS PROJECT
 
 ---
 
-## 🛠️ Tech Used
+## Tech Used
 
 - HTML5
 - CSS3
@@ -78,27 +78,27 @@ INSERT LIST OF WHAT I LEARNED MAKING THIS PROJECT
 
 ---
 
-## 🎨 Design Reference & Tools
+## Design Reference & Tools
 
 - JPG design image
 - PerfectPixel
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repository
 2. Open `index.html` in your browser
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
-Or you can check out the 👉 [live website here](LINK)
+Or you can check out the [live website here](LINK)
 
 ---
 
-## 📊 Performance Report
+## Performance Report
 
 [![Lighthouse Report Preview](./assets/img/lighthouse-report.png)](./assets/downloads/lighthouse-performance-report.pdf)
 
@@ -106,10 +106,10 @@ A **Google Lighthouse** audit was conducted on the final version of this project
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 Created by **Elmar Chavez**
 
-🗓️ Month/Year: **October 2025**
+Month/Year: **October 2025**
 
-📚 Journey: **7<sup>th</sup>** month of learning _frontend web development_.
+Journey: **7<sup>th</sup>** month of learning _frontend web development_.
