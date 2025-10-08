@@ -31,7 +31,7 @@
 
 INSERT A BRIEF DESCRIPTION OF THE PROJECT
 
-Created as part of the building challenges from [Frontend Mentor](https://www.frontendmentor.io/).
+Created as part of the building challenges from **[Frontend Mentor](https://www.frontendmentor.io/)**.
 
 ---
 
@@ -53,9 +53,9 @@ INSERT LIST OF PROJECT FEATURES
 
 > Click to view the full branch and merge history
 
-This project adapts a [granular branching and commit workflow](https://github.com/CodingWithJiro/frontend-mentor-newsletter-sign-up-form/network) to simulate team collaboration. Each feature, fix, documentation, and chore is tracked in its own branch with descriptive commits.
+This project adapts a **[granular branching and commit workflow](https://github.com/CodingWithJiro/frontend-mentor-newsletter-sign-up-form/network)** to simulate team collaboration. Each feature, fix, documentation, and chore is tracked in its own branch with descriptive commits.
 
-Each [pull request](https://github.com/CodingWithJiro/frontend-mentor-newsletter-sign-up-form/pulls?q=is%3Apr+is%3Aclosed) I created contains a clear description, change list, screenshots for UI updates, and reviewer notes.
+Each **[pull request](https://github.com/CodingWithJiro/frontend-mentor-newsletter-sign-up-form/pulls?q=is%3Apr+is%3Aclosed)** I created contains a clear description, change list, screenshots for UI updates, and reviewer notes.
 
 _This ensures I maintain a professional workflow, even as a solo developer._
 
@@ -94,7 +94,7 @@ INSERT LIST OF WHAT I LEARNED MAKING THIS PROJECT
 
 ## Live Demo
 
-Or you can check out the [live website here](LINK)
+Or you can check out the **[live website here](LINK)**
 
 ---
 
@@ -102,7 +102,7 @@ Or you can check out the [live website here](LINK)
 
 [![Lighthouse Report Preview](./assets/img/lighthouse-report.png)](./assets/downloads/lighthouse-performance-report.pdf)
 
-A **Google Lighthouse** audit was conducted on the final version of this project. You can view the full report [here](./assets/downloads/lighthouse-performance-report.pdf).
+A **Google Lighthouse** audit was conducted on the final version of this project. You can view the **[full report here](./assets/downloads/lighthouse-performance-report.pdf)**.
 
 ---
 
