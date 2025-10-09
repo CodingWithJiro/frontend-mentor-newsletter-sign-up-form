@@ -7,7 +7,7 @@ const thanks = document.querySelector(".thanks");
 const invalidText = document.querySelector(".card__invalid");
 
 function isEmailValid() {
-  const email = input.value;
+  const email = input.value.trim();
   return emailRegex.test(email);
 }
 
