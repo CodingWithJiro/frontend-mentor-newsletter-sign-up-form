@@ -11,12 +11,16 @@ function isEmailValid() {
   return emailRegex.test(email);
 }
 
+function showInvalidText() {
+  invalidText.classList.remove("hidden");
+}
+
 function handleSubmitForm() {
   if (isEmailValid()) {
     card.classList.add("hidden");
     thanks.classList.remove("hidden");
   } else {
-    throw new Error("Invalid email input");
+    showInvalidText();
   }
 }
 
