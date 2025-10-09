@@ -10,8 +10,18 @@ function isEmailValid() {
   return emailRegex.test(email);
 }
 
+function handleSubmitForm() {
+  if (isEmailValid()) {
+    card.classList.add("hidden");
+    thanks.classList.remove("hidden");
+  } else {
+    throw new Error("Invalid email input");
+  }
+}
+
 export function initForm() {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
+    handleSubmitForm();
   });
 }
