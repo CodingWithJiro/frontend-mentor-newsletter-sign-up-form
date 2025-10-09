@@ -15,10 +15,14 @@ function showInvalidText() {
   invalidText.classList.remove("hidden");
 }
 
+function showThanksSection() {
+  card.classList.add("hidden");
+  thanks.classList.remove("hidden");
+}
+
 function handleSubmitForm() {
   if (isEmailValid()) {
-    card.classList.add("hidden");
-    thanks.classList.remove("hidden");
+    showThanksSection();
   } else {
     showInvalidText();
   }
