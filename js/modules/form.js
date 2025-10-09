@@ -4,5 +4,7 @@ const input = document.querySelector(".card__input");
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export function initForm() {
-  // WRITE FUNCTIONS HERE
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+  });
 }
