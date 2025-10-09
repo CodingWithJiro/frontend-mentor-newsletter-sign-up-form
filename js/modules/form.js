@@ -15,6 +15,10 @@ function showInvalidText() {
   invalidText.classList.remove("hidden");
 }
 
+function hideInvalidText() {
+  invalidText.classList.add("hidden");
+}
+
 function showThanksSection() {
   card.classList.add("hidden");
   thanks.classList.remove("hidden");
