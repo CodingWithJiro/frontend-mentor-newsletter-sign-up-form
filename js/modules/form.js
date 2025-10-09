@@ -4,6 +4,7 @@ const input = document.querySelector(".card__input");
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const card = document.querySelector(".card");
 const thanks = document.querySelector(".thanks");
+const invalidText = document.querySelector(".card__invalid");
 
 function isEmailValid() {
   const email = input.value;
