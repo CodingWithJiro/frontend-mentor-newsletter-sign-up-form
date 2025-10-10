@@ -182,6 +182,13 @@ body {
   min-height: 100vh;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /** || MEDIA QUERY (DEVICE WIDTH) */
 @media screen and (min-width: 23.4375rem) {
 }
