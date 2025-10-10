@@ -61,7 +61,7 @@ ol {
 
   /* COLORS */
   --BGCOLOR-CARD: #fff;
-  --FONT-COLOR: #000;
+  --FONT-COLOR-CARD-TITLE: hsl(234, 29%, 20%);
 
   /* THEME TOGGLE COLORS */
   --FONT-COLOR-THEME-ICON-LIGHT: #333;
@@ -199,6 +199,12 @@ body {
 
 .card__hero {
   width: 100%;
+}
+
+.card__title {
+  font-weight: 700;
+  color: var(--FONT-COLOR-CARD-TITLE);
+  font-size: 2.5rem;
 }
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
