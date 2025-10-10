@@ -186,9 +186,11 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   background-color: var(--BGCOLOR-CARD);
+  min-height: 100vh;
+  width: 100%;
 }
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
