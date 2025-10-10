@@ -60,7 +60,7 @@ ol {
   --FS: 1rem;
 
   /* COLORS */
-  --BGCOLOR: #fff;
+  --BGCOLOR-CARD: #fff;
   --FONT-COLOR: #000;
 
   /* THEME TOGGLE COLORS */
@@ -188,6 +188,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--BGCOLOR-CARD);
 }
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
