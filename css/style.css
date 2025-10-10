@@ -201,6 +201,11 @@ body {
   width: 100%;
 }
 
+.card__content {
+  padding-block-start: 2.25rem;
+  padding-inline: 1.5rem;
+}
+
 .card__title {
   font-weight: 700;
   color: var(--FONT-COLOR-CARD-TITLE);
