@@ -174,6 +174,13 @@ body {
 }
 
 /** || MAIN */
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
 @media screen and (min-width: 23.4375rem) {
