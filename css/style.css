@@ -211,6 +211,7 @@ body {
   font-weight: 700;
   color: var(--FONT-COLOR-CARD-TITLE);
   font-size: 2.5rem;
+  margin-block-end: 0.45em;
 }
 
 .card__description {
