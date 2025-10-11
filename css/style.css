@@ -220,6 +220,12 @@ body {
   line-height: 1.5;
 }
 
+.card__features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /** || MEDIA QUERY (DEVICE WIDTH) */
 @media screen and (min-width: 23.4375rem) {
 }
