@@ -300,7 +300,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 1.25em;
+  padding-inline: 1.5em;
+  padding-block-start: 9.3em;
 }
 
 /** || UTILITY CLASSES */
