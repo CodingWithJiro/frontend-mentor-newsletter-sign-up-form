@@ -230,6 +230,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 0.725em;
+  margin-block-end: 2.6em;
 }
 
 .card__list {
