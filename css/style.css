@@ -61,12 +61,14 @@ ol {
 
   /* COLORS */
   --BGCOLOR-CARD: #fff;
+  --BGCOLOR-CARD-SUBSCRIBE: hsl(234, 29%, 20%);
   --FONT-COLOR-CARD-TITLE: hsl(234, 29%, 20%);
   --FONT-COLOR-CARD-DESCRIPTION: hsl(235, 18%, 26%);
   --FONT-COLOR-CARD-LIST-TEXT: hsl(235, 18%, 26%);
   --FONT-COLOR-CARD-LABEL: hsl(234, 29%, 20%);
   --FONT-COLOR-CARD-INVALID: hsl(4, 100%, 67%);
   --FONT-COLOR-CARD-INPUT: hsl(0, 0%, 58%);
+  --FONT-COLOR-CARD-SUBSCRIBE: #fff;
   --COLOR-CARD-ICON: #ff6155;
   --BORDER-COLOR-CARD-INPUT: hsl(0, 0%, 58%);
 
@@ -295,6 +297,17 @@ body {
   padding: 1.1em 1.5em;
   width: 100%;
   border-radius: 8px;
+}
+
+.card__subscribe {
+  background-color: var(--BGCOLOR-CARD-SUBSCRIBE);
+  color: var(--FONT-COLOR-CARD-SUBSCRIBE);
+  font-weight: 700;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1.1em;
+  user-select: none;
+  cursor: pointer;
 }
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
