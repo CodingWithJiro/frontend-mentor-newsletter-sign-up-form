@@ -220,6 +220,7 @@ body {
   font-weight: 400;
   color: var(--FONT-COLOR-CARD-DESCRIPTION);
   line-height: 1.5;
+  margin-block-end: 1.65em;
 }
 
 .card__features {
