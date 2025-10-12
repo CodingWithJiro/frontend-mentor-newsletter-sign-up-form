@@ -60,6 +60,7 @@ ol {
   --FS: 1rem;
 
   /* COLORS */
+  --BGCOLOR-MAIN: hsl(235, 18%, 26%);
   --BGCOLOR-CARD: #fff;
   --BGCOLOR-CARD-SUBSCRIBE: hsl(234, 29%, 20%);
   --BGCOLOR-THANKS: #fff;
@@ -165,12 +166,18 @@ body {
 }
 
 /** || MAIN */
+.main {
+  background-color: var(--BGCOLOR-MAIN);
+}
+
 .main__container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
+  max-width: 30.625rem;
+  margin-inline: auto;
 }
 
 .card {
