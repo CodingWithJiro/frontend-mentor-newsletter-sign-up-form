@@ -296,6 +296,11 @@ body {
 .thanks {
   background-color: var(--BGCOLOR-THANKS);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.25em;
 }
 
 /** || UTILITY CLASSES */
