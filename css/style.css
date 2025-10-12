@@ -253,6 +253,13 @@ body {
   line-height: 1.45;
 }
 
+.card__label-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card__label {
   color: var(--FONT-COLOR-CARD-LABEL);
   font-weight: 700;
