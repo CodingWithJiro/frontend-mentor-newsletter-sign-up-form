@@ -88,33 +88,6 @@ ol {
   --BOX-SHADOW-THEME: 0 0 3px var(--SHADOW-COLOR-THEME);
 }
 
-/** || UTILITY CLASSES */
-.dark {
-  --BGCOLOR: #333;
-  /* ADD OTHER DARK COLOR THEME VARIABLES */
-
-  /* THEME TOGGLE COLORS */
-  --FONT-COLOR-THEME-ICON-DARK: #f1f1f1;
-  --BGCOLOR-THEME-BUTTON: #222;
-  --BGCOLOR-THEME-BUTTON-AFTER: #f1f1f1;
-  --BORDER-COLOR-THEME-BUTTON: #666;
-  --SHADOW-COLOR-THEME: rgba(255, 255, 255, 0.3);
-}
-
-.sr-only {
-  position: absolute;
-  left: -10000px;
-  width: 1px;
-  height: 1px;
-  top: auto;
-  overflow: hidden;
-}
-
-.hidden {
-  opacity: 0;
-  display: none;
-}
-
 /** || GENERAL STYLES */
 html {
   font-size: var(--FS);
@@ -317,6 +290,33 @@ body {
   padding: 1.1em 1.1em 1em;
   user-select: none;
   cursor: pointer;
+}
+
+/** || UTILITY CLASSES */
+.dark {
+  --BGCOLOR: #333;
+  /* ADD OTHER DARK COLOR THEME VARIABLES */
+
+  /* THEME TOGGLE COLORS */
+  --FONT-COLOR-THEME-ICON-DARK: #f1f1f1;
+  --BGCOLOR-THEME-BUTTON: #222;
+  --BGCOLOR-THEME-BUTTON-AFTER: #f1f1f1;
+  --BORDER-COLOR-THEME-BUTTON: #666;
+  --SHADOW-COLOR-THEME: rgba(255, 255, 255, 0.3);
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+.hidden {
+  opacity: 0;
+  display: none;
 }
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
