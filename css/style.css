@@ -67,7 +67,8 @@ ol {
   --FONT-COLOR-CARD-LIST-TEXT: hsl(235, 18%, 26%);
   --FONT-COLOR-CARD-LABEL: hsl(234, 29%, 20%);
   --FONT-COLOR-CARD-INVALID: hsl(4, 100%, 67%);
-  --FONT-COLOR-CARD-INPUT: hsl(0, 0%, 58%);
+  --FONT-COLOR-CARD-INPUT: hsl(235, 18%, 26%);
+  --FONT-COLOR-CARD-INPUT-PLACEHOLDER: hsl(0, 0%, 58%);
   --FONT-COLOR-CARD-SUBSCRIBE: #fff;
   --COLOR-CARD-ICON: #ff6155;
   --BORDER-COLOR-CARD-INPUT: hsl(0, 0%, 58%);
@@ -300,6 +301,10 @@ body {
   width: 100%;
   border-radius: 8px;
   margin-block-end: 1.5em;
+}
+
+.card__input::placeholder {
+  color: var(--FONT-COLOR-CARD-INPUT-PLACEHOLDER);
 }
 
 .card__subscribe {
