@@ -72,6 +72,7 @@ ol {
   --FONT-COLOR-CARD-INPUT-PLACEHOLDER: hsl(0, 0%, 58%);
   --FONT-COLOR-CARD-SUBSCRIBE: #fff;
   --FONT-COLOR-THANKS-TITLE: hsl(234, 29%, 20%);
+  --FONT-COLOR-THANKS-CONTENT: hsl(235, 18%, 26%);
   --COLOR-CARD-ICON: #ff6155;
   --BORDER-COLOR-CARD-INPUT: hsl(0, 0%, 58%);
 
@@ -314,6 +315,12 @@ body {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 1;
+}
+
+.thanks__content {
+  color: var(--FONT-COLOR-THANKS-CONTENT);
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /** || UTILITY CLASSES */
