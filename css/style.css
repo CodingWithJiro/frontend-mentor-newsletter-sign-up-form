@@ -60,8 +60,18 @@ ol {
   --FS: 1rem;
 
   /* COLORS */
-  --BGCOLOR: #fff;
-  --FONT-COLOR: #000;
+  --BGCOLOR-CARD: #fff;
+  --BGCOLOR-CARD-SUBSCRIBE: hsl(234, 29%, 20%);
+  --FONT-COLOR-CARD-TITLE: hsl(234, 29%, 20%);
+  --FONT-COLOR-CARD-DESCRIPTION: hsl(235, 18%, 26%);
+  --FONT-COLOR-CARD-LIST-TEXT: hsl(235, 18%, 26%);
+  --FONT-COLOR-CARD-LABEL: hsl(234, 29%, 20%);
+  --FONT-COLOR-CARD-INVALID: hsl(4, 100%, 67%);
+  --FONT-COLOR-CARD-INPUT: hsl(235, 18%, 26%);
+  --FONT-COLOR-CARD-INPUT-PLACEHOLDER: hsl(0, 0%, 58%);
+  --FONT-COLOR-CARD-SUBSCRIBE: #fff;
+  --COLOR-CARD-ICON: #ff6155;
+  --BORDER-COLOR-CARD-INPUT: hsl(0, 0%, 58%);
 
   /* THEME TOGGLE COLORS */
   --FONT-COLOR-THEME-ICON-LIGHT: #333;
@@ -72,6 +82,7 @@ ol {
 
   /* BORDERS */
   --BORDER-THEME-BUTTON: 1px solid var(--BORDER-COLOR-THEME-BUTTON);
+  --BORDER-CARD-INPUT: 1px solid var(--BORDER-COLOR-CARD-INPUT);
 
   /* SHADOWS */
   --BOX-SHADOW-THEME: 0 0 3px var(--SHADOW-COLOR-THEME);
@@ -113,7 +124,8 @@ html {
 body {
   min-height: 100vh;
   background-color: var(--BGCOLOR);
-  color: var(--FONT-COLOR);
+  /* ! TO DELETE COLOR RED */
+  color: red;
 }
 
 /** || HEADER */
@@ -123,7 +135,7 @@ body {
   border-radius: 50px;
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  left: 1rem;
   padding: 0.5em 1em;
   display: flex;
   flex-direction: row;
@@ -174,8 +186,137 @@ body {
 }
 
 /** || MAIN */
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
 
-/** || FOOTER */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--BGCOLOR-CARD);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.card__picture {
+  width: 100%;
+}
+
+.card__hero {
+  width: 100%;
+}
+
+.card__content {
+  padding-block-start: 2.25rem;
+  padding-inline: 1.5rem;
+  padding-block-end: 2.25rem;
+}
+
+.card__title {
+  font-weight: 700;
+  color: var(--FONT-COLOR-CARD-TITLE);
+  font-size: 2.5rem;
+  margin-block-end: 0.45em;
+}
+
+.card__description {
+  font-weight: 400;
+  color: var(--FONT-COLOR-CARD-DESCRIPTION);
+  line-height: 1.5;
+  margin-block-end: 1.65em;
+}
+
+.card__features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.725em;
+  margin-block-end: 2.6em;
+}
+
+.card__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.card__icon {
+  color: var(--COLOR-CARD-ICON);
+  width: 100%;
+  max-width: 1.3125rem;
+  height: auto;
+}
+
+.card__list-text {
+  color: var(--FONT-COLOR-CARD-LIST-TEXT);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card__label-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-block-end: 0.6em;
+}
+
+.card__label {
+  color: var(--FONT-COLOR-CARD-LABEL);
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.card__invalid {
+  color: var(--FONT-COLOR-CARD-INVALID);
+  font-weight: 700;
+  font-size: 0.75rem;
+  position: absolute;
+  display: block;
+  min-width: max-content;
+  right: 0;
+}
+
+.card__input {
+  border: var(--BORDER-CARD-INPUT);
+  color: var(--FONT-COLOR-CARD-INPUT);
+  padding: 1.1em 1.5em;
+  width: 100%;
+  border-radius: 8px;
+  margin-block-end: 1.5em;
+}
+
+.card__input::placeholder {
+  color: var(--FONT-COLOR-CARD-INPUT-PLACEHOLDER);
+}
+
+.card__subscribe {
+  background-color: var(--BGCOLOR-CARD-SUBSCRIBE);
+  color: var(--FONT-COLOR-CARD-SUBSCRIBE);
+  font-weight: 700;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1.1em 1.1em 1em;
+  user-select: none;
+  cursor: pointer;
+}
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
 @media screen and (min-width: 23.4375rem) {
