@@ -264,8 +264,10 @@ body {
 .card__label-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  position: relative;
+  width: 100%;
 }
 
 .card__label {
@@ -278,6 +280,10 @@ body {
   color: var(--FONT-COLOR-CARD-INVALID);
   font-weight: 700;
   font-size: 0.75rem;
+  position: absolute;
+  display: block;
+  min-width: max-content;
+  right: 0;
 }
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
