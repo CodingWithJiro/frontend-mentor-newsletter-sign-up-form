@@ -316,6 +316,7 @@ body {
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 1;
+  margin-block-end: 0.55em;
 }
 
 .thanks__content {
