@@ -253,6 +253,13 @@ body {
   line-height: 1.45;
 }
 
+.card__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .card__label-container {
   display: flex;
   flex-direction: row;
