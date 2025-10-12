@@ -35,6 +35,11 @@ function handleSubmitForm() {
 export function initForm() {
   input.addEventListener("input", hideInvalidText);
 
+  input.addEventListener("invalid", (e) => {
+    e.preventDefault();
+    showInvalidText();
+  });
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     handleSubmitForm();
