@@ -65,6 +65,7 @@ ol {
   --FONT-COLOR-CARD-DESCRIPTION: hsl(235, 18%, 26%);
   --FONT-COLOR-CARD-LIST-TEXT: hsl(235, 18%, 26%);
   --FONT-COLOR-CARD-LABEL: hsl(234, 29%, 20%);
+  --FONT-COLOR-CARD-INVALID: hsl(4, 100%, 67%);
   --COLOR-CARD-ICON: #ff6155;
 
   /* THEME TOGGLE COLORS */
@@ -254,6 +255,12 @@ body {
 
 .card__label {
   color: var(--FONT-COLOR-CARD-LABEL);
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.card__invalid {
+  color: var(--FONT-COLOR-CARD-INVALID);
   font-weight: 700;
   font-size: 0.75rem;
 }
