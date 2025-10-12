@@ -307,6 +307,7 @@ body {
   align-items: flex-start;
   padding-inline: 1.5em;
   padding-block-start: 9.3em;
+  padding-block-end: 2.5em;
 }
 
 .thanks__icon {
