@@ -305,6 +305,10 @@ body {
   padding-block-start: 9.3em;
 }
 
+.thanks__icon {
+  margin-block-end: 2.3em;
+}
+
 .thanks__title {
   color: var(--FONT-COLOR-THANKS-TITLE);
   font-weight: 700;
