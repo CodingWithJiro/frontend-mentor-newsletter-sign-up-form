@@ -71,6 +71,7 @@ ol {
   --FONT-COLOR-CARD-INPUT: hsl(235, 18%, 26%);
   --FONT-COLOR-CARD-INPUT-PLACEHOLDER: hsl(0, 0%, 58%);
   --FONT-COLOR-CARD-SUBSCRIBE: #fff;
+  --FONT-COLOR-THANKS-TITLE: hsl(234, 29%, 20%);
   --COLOR-CARD-ICON: #ff6155;
   --BORDER-COLOR-CARD-INPUT: hsl(0, 0%, 58%);
 
@@ -302,6 +303,13 @@ body {
   align-items: flex-start;
   padding-inline: 1.5em;
   padding-block-start: 9.3em;
+}
+
+.thanks__title {
+  color: var(--FONT-COLOR-THANKS-TITLE);
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1;
 }
 
 /** || UTILITY CLASSES */
