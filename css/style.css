@@ -206,6 +206,7 @@ body {
 
 .card__picture {
   width: 100%;
+  max-width: 30.625rem;
 }
 
 .card__hero {
