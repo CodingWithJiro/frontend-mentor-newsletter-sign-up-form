@@ -64,6 +64,7 @@ ol {
   --FONT-COLOR-CARD-TITLE: hsl(234, 29%, 20%);
   --FONT-COLOR-CARD-DESCRIPTION: hsl(235, 18%, 26%);
   --FONT-COLOR-CARD-LIST-TEXT: hsl(235, 18%, 26%);
+  --FONT-COLOR-CARD-LABEL: hsl(234, 29%, 20%);
   --COLOR-CARD-ICON: #ff6155;
 
   /* THEME TOGGLE COLORS */
@@ -249,6 +250,12 @@ body {
   color: var(--FONT-COLOR-CARD-LIST-TEXT);
   font-size: 1rem;
   line-height: 1.45;
+}
+
+.card__label {
+  color: var(--FONT-COLOR-CARD-LABEL);
+  font-weight: 700;
+  font-size: 0.75rem;
 }
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
