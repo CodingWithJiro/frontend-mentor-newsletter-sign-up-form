@@ -64,6 +64,7 @@ ol {
   --FONT-COLOR-CARD-TITLE: hsl(234, 29%, 20%);
   --FONT-COLOR-CARD-DESCRIPTION: hsl(235, 18%, 26%);
   --FONT-COLOR-CARD-LIST-TEXT: hsl(235, 18%, 26%);
+  --COLOR-CARD-ICON: #ff6155;
 
   /* THEME TOGGLE COLORS */
   --FONT-COLOR-THEME-ICON-LIGHT: #333;
@@ -232,7 +233,13 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 1em;
+  gap: 0.9em;
+}
+
+.card__icon {
+  color: var(--COLOR-CARD-ICON);
+  width: 24px;
+  height: auto;
 }
 
 .card__list-text {
