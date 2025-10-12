@@ -83,7 +83,7 @@ const successIconSVG = ` <svg
               />
             </g>
           </svg>`;
-const thanksElement = document.querySelector(".thanks");
+const thanksWrapper = document.querySelector(".thanks__wrapper");
 
 function addThemeHTML() {
   theme.innerHTML = themeIconLightHTML + themeIconDarkHTML + themeButtonHTML;
@@ -96,7 +96,7 @@ function addCheckIconSVG() {
 }
 
 function addSuccessIconSVG() {
-  thanksElement.insertAdjacentHTML("afterbegin", successIconSVG);
+  thanksWrapper.insertAdjacentHTML("afterbegin", successIconSVG);
 }
 
 export function initUI() {

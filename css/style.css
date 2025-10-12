@@ -60,8 +60,11 @@ ol {
   --FS: 1rem;
 
   /* COLORS */
+  --BGCOLOR-MAIN: hsl(235, 18%, 26%);
   --BGCOLOR-CARD: #fff;
   --BGCOLOR-CARD-SUBSCRIBE: hsl(234, 29%, 20%);
+  --BGCOLOR-THANKS: #fff;
+  --BGCOLOR-THANKS-DISMISS: hsl(234, 29%, 20%);
   --FONT-COLOR-CARD-TITLE: hsl(234, 29%, 20%);
   --FONT-COLOR-CARD-DESCRIPTION: hsl(235, 18%, 26%);
   --FONT-COLOR-CARD-LIST-TEXT: hsl(235, 18%, 26%);
@@ -70,6 +73,10 @@ ol {
   --FONT-COLOR-CARD-INPUT: hsl(235, 18%, 26%);
   --FONT-COLOR-CARD-INPUT-PLACEHOLDER: hsl(0, 0%, 58%);
   --FONT-COLOR-CARD-SUBSCRIBE: #fff;
+  --FONT-COLOR-THANKS-TITLE: hsl(234, 29%, 20%);
+  --FONT-COLOR-THANKS-CONTENT: hsl(235, 18%, 26%);
+  --FONT-COLOR-THANKS-EMAIL: hsl(234, 29%, 20%);
+  --FONT-COLOR-THANKS-DISMISS: #fff;
   --COLOR-CARD-ICON: #ff6155;
   --BORDER-COLOR-CARD-INPUT: hsl(0, 0%, 58%);
 
@@ -86,33 +93,6 @@ ol {
 
   /* SHADOWS */
   --BOX-SHADOW-THEME: 0 0 3px var(--SHADOW-COLOR-THEME);
-}
-
-/** || UTILITY CLASSES */
-.dark {
-  --BGCOLOR: #333;
-  /* ADD OTHER DARK COLOR THEME VARIABLES */
-
-  /* THEME TOGGLE COLORS */
-  --FONT-COLOR-THEME-ICON-DARK: #f1f1f1;
-  --BGCOLOR-THEME-BUTTON: #222;
-  --BGCOLOR-THEME-BUTTON-AFTER: #f1f1f1;
-  --BORDER-COLOR-THEME-BUTTON: #666;
-  --SHADOW-COLOR-THEME: rgba(255, 255, 255, 0.3);
-}
-
-.sr-only {
-  position: absolute;
-  left: -10000px;
-  width: 1px;
-  height: 1px;
-  top: auto;
-  overflow: hidden;
-}
-
-.hidden {
-  opacity: 0;
-  display: none;
 }
 
 /** || GENERAL STYLES */
@@ -186,12 +166,18 @@ body {
 }
 
 /** || MAIN */
+.main {
+  background-color: var(--BGCOLOR-MAIN);
+}
+
 .main__container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
+  max-width: 30.625rem;
+  margin-inline: auto;
 }
 
 .card {
@@ -206,6 +192,7 @@ body {
 
 .card__picture {
   width: 100%;
+  max-width: 30.625rem;
 }
 
 .card__hero {
@@ -316,6 +303,79 @@ body {
   padding: 1.1em 1.1em 1em;
   user-select: none;
   cursor: pointer;
+}
+
+.thanks {
+  background-color: var(--BGCOLOR-THANKS);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-inline: 1.5em;
+  padding-block-start: 9.3em;
+  padding-block-end: 2.5em;
+}
+
+.thanks__icon {
+  margin-block-end: 2.3em;
+}
+
+.thanks__title {
+  color: var(--FONT-COLOR-THANKS-TITLE);
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-block-end: 0.55em;
+}
+
+.thanks__content {
+  color: var(--FONT-COLOR-THANKS-CONTENT);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.thanks__email {
+  color: var(--FONT-COLOR-THANKS-EMAIL);
+  font-weight: 700;
+}
+
+.thanks__dismiss {
+  background-color: var(--BGCOLOR-THANKS-DISMISS);
+  width: 100%;
+  padding: 1.075em;
+  border-radius: 8px;
+  user-select: none;
+  cursor: pointer;
+  color: var(--FONT-COLOR-THANKS-DISMISS);
+  font-weight: 700;
+}
+
+/** || UTILITY CLASSES */
+.dark {
+  --BGCOLOR: #333;
+  /* ADD OTHER DARK COLOR THEME VARIABLES */
+
+  /* THEME TOGGLE COLORS */
+  --FONT-COLOR-THEME-ICON-DARK: #f1f1f1;
+  --BGCOLOR-THEME-BUTTON: #222;
+  --BGCOLOR-THEME-BUTTON-AFTER: #f1f1f1;
+  --BORDER-COLOR-THEME-BUTTON: #666;
+  --SHADOW-COLOR-THEME: rgba(255, 255, 255, 0.3);
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+.hidden {
+  opacity: 0;
+  display: none;
 }
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
