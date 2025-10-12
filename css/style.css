@@ -226,6 +226,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 0.725em;
 }
 
 .card__list {
@@ -233,19 +234,20 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 0.9em;
+  gap: 1em;
 }
 
 .card__icon {
   color: var(--COLOR-CARD-ICON);
-  width: 24px;
+  width: 100%;
+  max-width: 1.3125rem;
   height: auto;
 }
 
 .card__list-text {
   color: var(--FONT-COLOR-CARD-LIST-TEXT);
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
