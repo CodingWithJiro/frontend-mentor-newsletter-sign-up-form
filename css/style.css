@@ -79,6 +79,9 @@ ol {
   --FONT-COLOR-THANKS-DISMISS: #fff;
   --COLOR-CARD-ICON: #ff6155;
   --BORDER-COLOR-CARD-INPUT: hsl(0, 0%, 58%);
+  --SHADOW-COLOR-CARD: 235deg 26% 16%;
+  --GRADIENT-COLOR-CARD-SUBSCRIBE-1: #ff5575;
+  --GRADIENT-COLOR-CARD-SUBSCRIBE-2: #ff6b5c;
 
   /* THEME TOGGLE COLORS */
   --FONT-COLOR-THEME-ICON-LIGHT: #333;
@@ -93,6 +96,21 @@ ol {
 
   /* SHADOWS */
   --BOX-SHADOW-THEME: 0 0 3px var(--SHADOW-COLOR-THEME);
+  --BOX-SHADOW-CARD: 0.3px 0.5px 0.7px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
+    1px 2.1px 2.6px -0.4px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
+    1.8px 3.7px 4.6px -0.7px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
+    3px 6px 7.5px -1.1px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
+    4.7px 9.4px 11.8px -1.4px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
+    7.3px 14.6px 18.4px -1.8px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
+    11.1px 22.1px 27.8px -2.1px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
+    16.3px 32.5px 40.9px -2.5px hsl(var(--SHADOW-COLOR-CARD) / 0.21);
+
+  /* GRADIENTS */
+  --GRADIENT-CARD-SUBSCRIBE: linear-gradient(
+    to right,
+    var(--GRADIENT-COLOR-CARD-SUBSCRIBE-1),
+    var(--GRADIENT-COLOR-CARD-SUBSCRIBE-2)
+  );
 }
 
 /** || GENERAL STYLES */
@@ -104,8 +122,6 @@ html {
 body {
   min-height: 100vh;
   background-color: var(--BGCOLOR);
-  /* ! TO DELETE COLOR RED */
-  color: red;
 }
 
 /** || HEADER */
@@ -168,6 +184,9 @@ body {
 /** || MAIN */
 .main {
   background-color: var(--BGCOLOR-MAIN);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main__container {
@@ -209,6 +228,7 @@ body {
   font-weight: 700;
   color: var(--FONT-COLOR-CARD-TITLE);
   font-size: 2.5rem;
+  font-size: clamp(2.5rem, 0.0385rem + 3.8462vw, 3.5rem);
   margin-block-end: 0.45em;
 }
 
@@ -305,6 +325,11 @@ body {
   cursor: pointer;
 }
 
+.card__subscribe:hover,
+.card__subscribe:focus-visible {
+  background-image: var(--GRADIENT-CARD-SUBSCRIBE);
+}
+
 .thanks {
   background-color: var(--BGCOLOR-THANKS);
   min-height: 100vh;
@@ -379,10 +404,49 @@ body {
 }
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 48rem) {
+  .card {
+    border-radius: 15px;
+    box-shadow: var(--BOX-SHADOW-CARD);
+  }
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 64rem) {
+  /** || MAIN */
+  .main__container {
+    justify-content: center;
+    margin-inline: auto;
+    max-width: none;
+  }
+
+  .card {
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: auto;
+    padding-block: 1.5rem;
+    padding-inline-start: 4rem;
+    padding-inline-end: 1.25rem;
+    border-radius: 35px;
+    gap: 4.25em;
+  }
+
+  .card__picture {
+    order: 1;
+    width: 100%;
+    max-width: 25rem;
+    position: relative;
+    right: 0.25em;
+  }
+
+  .card__content {
+    padding-inline: 0;
+    padding-block-start: 4.1em;
+    max-width: 23.5rem;
+  }
+
+  .card__title {
+    margin-block-end: 0.3em;
+  }
 }
 
 /** || MEDIA QUERY (REDUCED MOTION) */
