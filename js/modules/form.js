@@ -24,11 +24,16 @@ function showThanksSection() {
   thanks.classList.remove("hidden");
 }
 
+function changeInputStyleToInvalid() {
+  input.classList.add("invalid");
+}
+
 function handleSubmitForm() {
   if (isEmailValid()) {
     showThanksSection();
   } else {
     showInvalidText();
+    changeInputStyleToInvalid();
   }
 }
 
@@ -38,6 +43,7 @@ export function initForm() {
   input.addEventListener("invalid", (e) => {
     e.preventDefault();
     showInvalidText();
+    changeInputStyleToInvalid();
   });
 
   form.addEventListener("submit", (e) => {
