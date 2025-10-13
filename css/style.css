@@ -80,6 +80,7 @@ ol {
   --COLOR-CARD-ICON: #ff6155;
   --BORDER-COLOR-CARD-INPUT: hsl(0, 0%, 58%);
   --SHADOW-COLOR-CARD: 235deg 26% 16%;
+  --SHADOW-COLOR-THANKS: 235deg 26% 16%;
   --GRADIENT-COLOR-CARD-SUBSCRIBE-1: #ff5575;
   --GRADIENT-COLOR-CARD-SUBSCRIBE-2: #ff6b5c;
 
@@ -104,6 +105,14 @@ ol {
     7.3px 14.6px 18.4px -1.8px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
     11.1px 22.1px 27.8px -2.1px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
     16.3px 32.5px 40.9px -2.5px hsl(var(--SHADOW-COLOR-CARD) / 0.21);
+  --BOX-SHADOW-THANKS: 0.3px 0.5px 0.7px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    1px 2.1px 2.6px -0.4px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    1.8px 3.7px 4.6px -0.7px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    3px 6px 7.5px -1.1px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    4.7px 9.4px 11.8px -1.4px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    7.3px 14.6px 18.4px -1.8px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    11.1px 22.1px 27.8px -2.1px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    16.3px 32.5px 40.9px -2.5px hsl(var(--SHADOW-COLOR-THANKS) / 0.21);
 
   /* GRADIENTS */
   --GRADIENT-CARD-SUBSCRIBE: linear-gradient(
@@ -455,6 +464,7 @@ body {
     max-width: 31.5rem;
     min-height: 32.5rem;
     border-radius: 35px;
+    box-shadow: var(--BOX-SHADOW-THANKS);
   }
 
   .thanks__title {
