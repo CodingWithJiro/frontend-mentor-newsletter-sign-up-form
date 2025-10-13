@@ -79,6 +79,8 @@ ol {
   --FONT-COLOR-THANKS-DISMISS: #fff;
   --COLOR-CARD-ICON: #ff6155;
   --BORDER-COLOR-CARD-INPUT: hsl(0, 0%, 58%);
+  --GRADIENT-COLOR-CARD-SUBSCRIBE-1: #ff5575;
+  --GRADIENT-COLOR-CARD-SUBSCRIBE-2: #ff6b5c;
 
   /* THEME TOGGLE COLORS */
   --FONT-COLOR-THEME-ICON-LIGHT: #333;
@@ -93,6 +95,13 @@ ol {
 
   /* SHADOWS */
   --BOX-SHADOW-THEME: 0 0 3px var(--SHADOW-COLOR-THEME);
+
+  /* GRADIENTS */
+  --GRADIENT-CARD-SUBSCRIBE: linear-gradient(
+    to right,
+    var(--GRADIENT-COLOR-CARD-SUBSCRIBE-1),
+    var(--GRADIENT-COLOR-CARD-SUBSCRIBE-2)
+  );
 }
 
 /** || GENERAL STYLES */
@@ -305,6 +314,11 @@ body {
   padding: 1.1em 1.1em 1em;
   user-select: none;
   cursor: pointer;
+}
+
+.card__subscribe:hover,
+.card__subscribe:focus-visible {
+  background-image: var(--GRADIENT-CARD-SUBSCRIBE);
 }
 
 .thanks {
