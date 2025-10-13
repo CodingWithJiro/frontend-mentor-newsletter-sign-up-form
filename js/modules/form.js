@@ -5,6 +5,7 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const card = document.querySelector(".card");
 const thanks = document.querySelector(".thanks");
 const invalidText = document.querySelector(".card__invalid");
+const thanksEmail = document.querySelector(".thanks__email");
 
 function isEmailValid() {
   const email = input.value.trim();
@@ -20,7 +21,10 @@ function hideInvalidText() {
 }
 
 function showThanksSection() {
+  const email = input.value.trim();
+
   card.classList.add("hidden");
+  thanksEmail.textContent = email;
   thanks.classList.remove("hidden");
 }
 
