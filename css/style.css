@@ -394,6 +394,16 @@ body {
   .card {
     flex-direction: row;
     min-height: auto;
+    padding: 1.5rem 1.2rem;
+    border-radius: 35px;
+  }
+
+  .card__picture {
+    order: 1;
+    width: 100%;
+    max-width: 25rem;
+    position: relative;
+    right: 0.25em;
   }
 }
 
