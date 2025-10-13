@@ -83,6 +83,8 @@ ol {
   --SHADOW-COLOR-THANKS: 235deg 26% 16%;
   --GRADIENT-COLOR-CARD-SUBSCRIBE-1: #ff5575;
   --GRADIENT-COLOR-CARD-SUBSCRIBE-2: #ff6b5c;
+  --GRADIENT-COLOR-THANKS-DISMISS-1: #ff5575;
+  --GRADIENT-COLOR-THANKS-DISMISS-2: #ff6b5c;
 
   /* THEME TOGGLE COLORS */
   --FONT-COLOR-THEME-ICON-LIGHT: #333;
@@ -119,6 +121,11 @@ ol {
     to right,
     var(--GRADIENT-COLOR-CARD-SUBSCRIBE-1),
     var(--GRADIENT-COLOR-CARD-SUBSCRIBE-2)
+  );
+  --GRADIENT-THANKS-DISMISS: linear-gradient(
+    to right,
+    var(--GRADIENT-COLOR-THANKS-DISMISS-1),
+    var(--GRADIENT-COLOR-THANKS-DISMISS-2)
   );
 }
 
@@ -383,6 +390,11 @@ body {
   cursor: pointer;
   color: var(--FONT-COLOR-THANKS-DISMISS);
   font-weight: 700;
+}
+
+.thanks__dismiss:hover,
+.thanks__dismiss:focus-visible {
+  background-image: var(--GRADIENT-THANKS-DISMISS);
 }
 
 /** || UTILITY CLASSES */
