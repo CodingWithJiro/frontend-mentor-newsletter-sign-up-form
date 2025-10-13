@@ -80,8 +80,11 @@ ol {
   --COLOR-CARD-ICON: #ff6155;
   --BORDER-COLOR-CARD-INPUT: hsl(0, 0%, 58%);
   --SHADOW-COLOR-CARD: 235deg 26% 16%;
+  --SHADOW-COLOR-THANKS: 235deg 26% 16%;
   --GRADIENT-COLOR-CARD-SUBSCRIBE-1: #ff5575;
   --GRADIENT-COLOR-CARD-SUBSCRIBE-2: #ff6b5c;
+  --GRADIENT-COLOR-THANKS-DISMISS-1: #ff5575;
+  --GRADIENT-COLOR-THANKS-DISMISS-2: #ff6b5c;
 
   /* THEME TOGGLE COLORS */
   --FONT-COLOR-THEME-ICON-LIGHT: #333;
@@ -104,12 +107,25 @@ ol {
     7.3px 14.6px 18.4px -1.8px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
     11.1px 22.1px 27.8px -2.1px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
     16.3px 32.5px 40.9px -2.5px hsl(var(--SHADOW-COLOR-CARD) / 0.21);
+  --BOX-SHADOW-THANKS: 0.3px 0.5px 0.7px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    1px 2.1px 2.6px -0.4px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    1.8px 3.7px 4.6px -0.7px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    3px 6px 7.5px -1.1px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    4.7px 9.4px 11.8px -1.4px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    7.3px 14.6px 18.4px -1.8px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    11.1px 22.1px 27.8px -2.1px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    16.3px 32.5px 40.9px -2.5px hsl(var(--SHADOW-COLOR-THANKS) / 0.21);
 
   /* GRADIENTS */
   --GRADIENT-CARD-SUBSCRIBE: linear-gradient(
     to right,
     var(--GRADIENT-COLOR-CARD-SUBSCRIBE-1),
     var(--GRADIENT-COLOR-CARD-SUBSCRIBE-2)
+  );
+  --GRADIENT-THANKS-DISMISS: linear-gradient(
+    to right,
+    var(--GRADIENT-COLOR-THANKS-DISMISS-1),
+    var(--GRADIENT-COLOR-THANKS-DISMISS-2)
   );
 }
 
@@ -349,7 +365,7 @@ body {
 .thanks__title {
   color: var(--FONT-COLOR-THANKS-TITLE);
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 0.0385rem + 3.8462vw, 3.5rem);
   line-height: 1;
   margin-block-end: 0.55em;
 }
@@ -374,6 +390,11 @@ body {
   cursor: pointer;
   color: var(--FONT-COLOR-THANKS-DISMISS);
   font-weight: 700;
+}
+
+.thanks__dismiss:hover,
+.thanks__dismiss:focus-visible {
+  background-image: var(--GRADIENT-THANKS-DISMISS);
 }
 
 /** || UTILITY CLASSES */
@@ -446,6 +467,20 @@ body {
 
   .card__title {
     margin-block-end: 0.3em;
+  }
+
+  .thanks {
+    padding-inline: 4rem;
+    padding-block-start: 3rem;
+    padding-block-end: 4rem;
+    max-width: 31.5rem;
+    min-height: 32.5rem;
+    border-radius: 35px;
+    box-shadow: var(--BOX-SHADOW-THANKS);
+  }
+
+  .thanks__title {
+    margin-block-end: 0.4em;
   }
 }
 
