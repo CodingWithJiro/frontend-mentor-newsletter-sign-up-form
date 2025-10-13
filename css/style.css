@@ -395,7 +395,10 @@ body {
 }
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
-@media screen and (min-width: 23.4375rem) {
+@media screen and (min-width: 48rem) {
+  .card {
+    border-radius: 15px;
+  }
 }
 
 @media screen and (min-width: 64rem) {
