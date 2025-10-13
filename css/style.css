@@ -63,6 +63,7 @@ ol {
   --BGCOLOR-MAIN: hsl(235, 18%, 26%);
   --BGCOLOR-CARD: #fff;
   --BGCOLOR-CARD-INPUT: #fff;
+  --BGCOLOR-CARD-INPUT-INVALID: hsl(4, 100%, 94%);
   --BGCOLOR-CARD-SUBSCRIBE: hsl(234, 29%, 20%);
   --BGCOLOR-THANKS: #fff;
   --BGCOLOR-THANKS-DISMISS: hsl(234, 29%, 20%);
@@ -72,6 +73,7 @@ ol {
   --FONT-COLOR-CARD-LABEL: hsl(234, 29%, 20%);
   --FONT-COLOR-CARD-INVALID: hsl(4, 100%, 67%);
   --FONT-COLOR-CARD-INPUT: hsl(235, 18%, 26%);
+  --FONT-COLOR-CARD-INPUT-INVALID: hsl(4, 100%, 67%);
   --FONT-COLOR-CARD-INPUT-PLACEHOLDER: hsl(0, 0%, 58%);
   --FONT-COLOR-CARD-INPUT-TEXT-FILL: hsl(234, 29%, 20%);
   --FONT-COLOR-CARD-SUBSCRIBE: #fff;
@@ -81,6 +83,7 @@ ol {
   --FONT-COLOR-THANKS-DISMISS: #fff;
   --COLOR-CARD-ICON: #ff6155;
   --BORDER-COLOR-CARD-INPUT: hsl(0, 0%, 58%);
+  --BORDER-COLOR-CARD-INPUT-INVALID: hsl(4, 100%, 67%);
   --SHADOW-COLOR-CARD: 235deg 26% 16%;
   --SHADOW-COLOR-CARD-INPUT-AUTOFILL: #fff;
   --SHADOW-COLOR-THANKS: 235deg 26% 16%;
@@ -99,6 +102,7 @@ ol {
   /* BORDERS */
   --BORDER-THEME-BUTTON: 1px solid var(--BORDER-COLOR-THEME-BUTTON);
   --BORDER-CARD-INPUT: 1px solid var(--BORDER-COLOR-CARD-INPUT);
+  --BORDER-CARD-INPUT-INVALID: 1px solid var(--BORDER-COLOR-CARD-INPUT-INVALID);
 
   /* SHADOWS */
   --BOX-SHADOW-THEME: 0 0 3px var(--SHADOW-COLOR-THEME);
@@ -330,6 +334,12 @@ body {
   width: 100%;
   border-radius: 8px;
   margin-block-end: 1.5em;
+}
+
+.card__input.invalid {
+  border: var(--BORDER-CARD-INPUT-INVALID);
+  color: var(--FONT-COLOR-CARD-INPUT-INVALID);
+  background-color: var(--BGCOLOR-CARD-INPUT-INVALID);
 }
 
 .card__input::placeholder {
