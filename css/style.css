@@ -385,7 +385,18 @@ body {
 @media screen and (min-width: 23.4375rem) {
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 64rem) {
+  /** || MAIN */
+  .main__container {
+    justify-content: center;
+    margin-inline: auto;
+    max-width: none;
+  }
+
+  .card {
+    flex-direction: row;
+    min-height: auto;
+  }
 }
 
 /** || MEDIA QUERY (REDUCED MOTION) */
