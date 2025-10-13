@@ -349,7 +349,7 @@ body {
 .thanks__title {
   color: var(--FONT-COLOR-THANKS-TITLE);
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 0.0385rem + 3.8462vw, 3.5rem);
   line-height: 1;
   margin-block-end: 0.55em;
 }
@@ -458,8 +458,6 @@ body {
   }
 
   .thanks__title {
-    font-size: 2.5rem;
-    font-size: 3.5rem;
     line-height: 1;
     margin-block-end: 0.4em;
   }
