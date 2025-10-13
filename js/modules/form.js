@@ -28,6 +28,10 @@ function changeInputStyleToInvalid() {
   input.classList.add("invalid");
 }
 
+function changeInputStyleToNeutral() {
+  input.classList.remove("invalid");
+}
+
 function handleSubmitForm() {
   if (isEmailValid()) {
     showThanksSection();
@@ -38,7 +42,10 @@ function handleSubmitForm() {
 }
 
 export function initForm() {
-  input.addEventListener("input", hideInvalidText);
+  input.addEventListener("input", () => {
+    hideInvalidText();
+    changeInputStyleToNeutral();
+  });
 
   input.addEventListener("invalid", (e) => {
     e.preventDefault();
