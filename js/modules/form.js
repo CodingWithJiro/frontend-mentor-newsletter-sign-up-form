@@ -32,6 +32,12 @@ function showThanksSection() {
   thanks.classList.remove("hidden");
 }
 
+function hideThanksSection() {
+  thanks.classList.add("hidden");
+  input.value = "";
+  card.classList.remove("hidden");
+}
+
 function changeInputStyleToInvalid() {
   input.classList.add("invalid");
 }
@@ -68,5 +74,9 @@ export function initForm() {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     handleSubmitForm();
+  });
+
+  dismiss.addEventListener("click", () => {
+    hideThanksSection();
   });
 }
