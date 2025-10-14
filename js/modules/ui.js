@@ -99,6 +99,15 @@ function addSuccessIconSVG() {
   thanksWrapper.insertAdjacentHTML("afterbegin", successIconSVG);
 }
 
+export function resetAnimation(...elements) {
+  elements.forEach((element) => {
+    element.addEventListener("animationend", () => {
+      element.classList.remove("shake");
+      void element.offSetWidth;
+    });
+  });
+}
+
 export function shakeInput(inputElement) {
   inputElement.classList.add("shake");
 }
