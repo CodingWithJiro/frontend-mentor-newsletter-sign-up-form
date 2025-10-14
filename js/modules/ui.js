@@ -83,6 +83,7 @@ const successIconSVG = ` <svg
               />
             </g>
           </svg>`;
+const thanks = document.querySelector(".thanks");
 const thanksWrapper = document.querySelector(".thanks__wrapper");
 
 function addThemeHTML() {
