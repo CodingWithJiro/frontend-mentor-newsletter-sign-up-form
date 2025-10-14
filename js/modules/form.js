@@ -9,6 +9,7 @@ const card = document.querySelector(".card");
 const thanks = document.querySelector(".thanks");
 const invalidText = document.querySelector(".card__invalid");
 const thanksEmail = document.querySelector(".thanks__email");
+const dismiss = document.querySelector(".thanks__dismiss");
 
 function isEmailValid() {
   const email = input.value.trim();
