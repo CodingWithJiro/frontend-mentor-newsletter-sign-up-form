@@ -113,6 +113,10 @@ export function shakeInput(inputElement) {
   inputElement.classList.add("shake");
 }
 
+function isThanksSectionOpen() {
+  return !thanks.classList.contains("hidden");
+}
+
 export function initUI() {
   addThemeHTML();
   addCheckIconSVG();
