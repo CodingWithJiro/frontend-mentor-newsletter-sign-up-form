@@ -1,3 +1,6 @@
+// * IMPORT MODULES
+import { shakeInput, resetAnimation } from "./ui.js";
+
 // * FORM.JS SCRIPT
 const form = document.querySelector(".card__form");
 const input = document.querySelector(".card__input");
@@ -42,10 +45,13 @@ function handleSubmitForm() {
   } else {
     showInvalidText();
     changeInputStyleToInvalid();
+    shakeInput(input);
   }
 }
 
 export function initForm() {
+  resetAnimation(input);
+
   input.addEventListener("input", () => {
     hideInvalidText();
     changeInputStyleToNeutral();
@@ -55,6 +61,7 @@ export function initForm() {
     e.preventDefault();
     showInvalidText();
     changeInputStyleToInvalid();
+    shakeInput(input);
   });
 
   form.addEventListener("submit", (e) => {
