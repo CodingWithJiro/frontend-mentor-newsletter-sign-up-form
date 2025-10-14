@@ -85,6 +85,7 @@ const successIconSVG = ` <svg
           </svg>`;
 const thanks = document.querySelector(".thanks");
 const thanksWrapper = document.querySelector(".thanks__wrapper");
+const dismiss = document.querySelector(".thanks__dismiss");
 
 function addThemeHTML() {
   theme.innerHTML = themeIconLightHTML + themeIconDarkHTML + themeButtonHTML;
@@ -117,8 +118,17 @@ function isThanksSectionOpen() {
   return !thanks.classList.contains("hidden");
 }
 
+function initDismissKeyboardSupport() {
+  document.addEventListener("keydown", (e) => {
+    if (isThanksSectionOpen() && e.key === "Enter") {
+      dismiss.click();
+    }
+  });
+}
+
 export function initUI() {
   addThemeHTML();
   addCheckIconSVG();
   addSuccessIconSVG();
+  initDismissKeyboardSupport();
 }
