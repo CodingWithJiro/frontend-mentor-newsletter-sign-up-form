@@ -99,6 +99,10 @@ function addSuccessIconSVG() {
   thanksWrapper.insertAdjacentHTML("afterbegin", successIconSVG);
 }
 
+export function shakeInput(inputElement) {
+  inputElement.classList.add("shake");
+}
+
 export function initUI() {
   addThemeHTML();
   addCheckIconSVG();
