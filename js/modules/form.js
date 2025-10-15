@@ -1,5 +1,11 @@
 // * IMPORT MODULES
-import { shakeInput, resetAnimation, fadeOutCard } from "./ui.js";
+import {
+  shakeInput,
+  resetAnimation,
+  fadeOutCard,
+  fadeOutThanks,
+  fadeInCard,
+} from "./ui.js";
 
 // * FORM.JS SCRIPT
 const form = document.querySelector(".card__form");
@@ -40,9 +46,18 @@ function showThanksSection() {
 }
 
 function hideThanksSection() {
-  thanks.classList.add("hidden");
-  input.value = "";
-  card.classList.remove("hidden");
+  fadeOutThanks();
+
+  thanks.addEventListener(
+    "animationend",
+    () => {
+      thanks.classList.add("hidden");
+      input.value = "";
+      card.classList.remove("hidden");
+      fadeInCard();
+    },
+    { once: true }
+  );
 }
 
 function changeInputStyleToInvalid() {
