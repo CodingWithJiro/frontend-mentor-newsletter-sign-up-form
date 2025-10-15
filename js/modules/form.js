@@ -33,6 +33,7 @@ function showThanksSection() {
       card.classList.add("hidden");
       thanksEmail.textContent = email;
       thanks.classList.remove("hidden");
+      thanks.classList.add("fade-in");
     },
     { once: true }
   );
@@ -64,7 +65,7 @@ function handleSubmitForm() {
 }
 
 export function initForm() {
-  resetAnimation(input, card);
+  resetAnimation(input, card, thanks);
 
   input.addEventListener("input", () => {
     hideInvalidText();
