@@ -1,5 +1,5 @@
 // * IMPORT MODULES
-import { shakeInput, resetAnimation } from "./ui.js";
+import { shakeInput, resetAnimation, fadeOutCard } from "./ui.js";
 
 // * FORM.JS SCRIPT
 const form = document.querySelector(".card__form");
@@ -27,9 +27,15 @@ function hideInvalidText() {
 function showThanksSection() {
   const email = input.value.trim();
 
-  card.classList.add("hidden");
-  thanksEmail.textContent = email;
-  thanks.classList.remove("hidden");
+  card.addEventListener(
+    "animationend",
+    () => {
+      card.classList.add("hidden");
+      thanksEmail.textContent = email;
+      thanks.classList.remove("hidden");
+    },
+    { once: true }
+  );
 }
 
 function hideThanksSection() {
@@ -48,6 +54,7 @@ function changeInputStyleToNeutral() {
 
 function handleSubmitForm() {
   if (isEmailValid()) {
+    fadeOutCard();
     showThanksSection();
   } else {
     showInvalidText();
@@ -57,7 +64,7 @@ function handleSubmitForm() {
 }
 
 export function initForm() {
-  resetAnimation(input);
+  resetAnimation(input, card);
 
   input.addEventListener("input", () => {
     hideInvalidText();
