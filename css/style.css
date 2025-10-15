@@ -448,14 +448,6 @@ body {
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
 @media screen and (min-width: 48rem) {
-  .card {
-    border-radius: 15px;
-    box-shadow: var(--BOX-SHADOW-CARD);
-  }
-}
-
-@media screen and (min-width: 64rem) {
-  /** || MAIN */
   .main__container {
     justify-content: center;
     margin-inline: auto;
@@ -463,13 +455,21 @@ body {
   }
 
   .card {
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     min-height: auto;
+    padding: 1.5rem;
+    border-radius: 35px;
+    box-shadow: var(--BOX-SHADOW-CARD);
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .card {
+    flex-direction: row;
     padding-block: 1.5rem;
     padding-inline-start: 4rem;
     padding-inline-end: 1.25rem;
-    border-radius: 35px;
     gap: 4.25em;
   }
 
