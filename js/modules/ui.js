@@ -83,6 +83,7 @@ const successIconSVG = ` <svg
               />
             </g>
           </svg>`;
+const card = document.querySelector(".card");
 const thanks = document.querySelector(".thanks");
 const thanksWrapper = document.querySelector(".thanks__wrapper");
 const dismiss = document.querySelector(".thanks__dismiss");
