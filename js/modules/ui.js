@@ -137,6 +137,14 @@ export function fadeInThanks() {
   thanks.classList.add("fade-in");
 }
 
+export function fadeOutThanks() {
+  thanks.classList.add("fade-out");
+}
+
+export function fadeInCard() {
+  card.classList.add("fade-in");
+}
+
 export function initUI() {
   addThemeHTML();
   addCheckIconSVG();
