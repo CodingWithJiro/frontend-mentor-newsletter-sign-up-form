@@ -107,6 +107,7 @@ export function resetAnimation(...elements) {
     element.addEventListener("animationend", () => {
       element.classList.remove("shake");
       element.classList.remove("fade-out");
+      element.classList.remove("fade-in");
       void element.offSetWidth;
     });
   });
@@ -130,6 +131,10 @@ function initDismissKeyboardSupport() {
 
 export function fadeOutCard() {
   card.classList.add("fade-out");
+}
+
+export function fadeInThanks() {
+  thanks.classList.add("fade-in");
 }
 
 export function initUI() {
