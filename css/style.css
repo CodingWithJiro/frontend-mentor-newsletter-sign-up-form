@@ -460,7 +460,6 @@ body {
     min-height: auto;
     padding: 1.5rem;
     border-radius: 35px;
-    gap: 4.25em;
     box-shadow: var(--BOX-SHADOW-CARD);
   }
 }
@@ -471,6 +470,7 @@ body {
     padding-block: 1.5rem;
     padding-inline-start: 4rem;
     padding-inline-end: 1.25rem;
+    gap: 4.25em;
   }
 
   .card__picture {
