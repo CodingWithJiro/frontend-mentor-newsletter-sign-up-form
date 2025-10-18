@@ -83,6 +83,7 @@ const successIconSVG = ` <svg
               />
             </g>
           </svg>`;
+const card = document.querySelector(".card");
 const thanks = document.querySelector(".thanks");
 const thanksWrapper = document.querySelector(".thanks__wrapper");
 const dismiss = document.querySelector(".thanks__dismiss");
@@ -105,6 +106,8 @@ export function resetAnimation(...elements) {
   elements.forEach((element) => {
     element.addEventListener("animationend", () => {
       element.classList.remove("shake");
+      element.classList.remove("fade-out");
+      element.classList.remove("fade-in");
       void element.offSetWidth;
     });
   });
@@ -124,6 +127,22 @@ function initDismissKeyboardSupport() {
       dismiss.click();
     }
   });
+}
+
+export function fadeOutCard() {
+  card.classList.add("fade-out");
+}
+
+export function fadeInThanks() {
+  thanks.classList.add("fade-in");
+}
+
+export function fadeOutThanks() {
+  thanks.classList.add("fade-out");
+}
+
+export function fadeInCard() {
+  card.classList.add("fade-in");
 }
 
 export function initUI() {
