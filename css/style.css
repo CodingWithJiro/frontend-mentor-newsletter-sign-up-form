@@ -278,6 +278,11 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1em;
+  cursor: pointer;
+}
+
+.card__list:hover {
+  transform: scale(1.02);
 }
 
 .card__icon {
@@ -511,6 +516,10 @@ body {
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
+  }
+
+  .card__list {
+    transition: transform 0.1s ease-in-out;
   }
 
   /* ADD OTHER TRANSITIONS AND ANIMATIONS HERE */
