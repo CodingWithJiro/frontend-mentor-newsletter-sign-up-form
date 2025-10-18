@@ -16,6 +16,9 @@ const thanks = document.querySelector(".thanks");
 const invalidText = document.querySelector(".card__invalid");
 const thanksEmail = document.querySelector(".thanks__email");
 const dismiss = document.querySelector(".thanks__dismiss");
+const prefersReducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)"
+).matches;
 
 function isEmailValid() {
   const email = input.value.trim();
@@ -33,31 +36,45 @@ function hideInvalidText() {
 function showThanksSection() {
   const email = input.value.trim();
 
-  card.addEventListener(
-    "animationend",
-    () => {
-      card.classList.add("hidden");
-      thanksEmail.textContent = email;
-      thanks.classList.remove("hidden");
-      thanks.classList.add("fade-in");
-    },
-    { once: true }
-  );
+  if (prefersReducedMotion) {
+    card.classList.add("hidden");
+    thanksEmail.textContent = email;
+    thanks.classList.remove("hidden");
+    thanks.classList.add("fade-in");
+  } else {
+    card.addEventListener(
+      "animationend",
+      () => {
+        card.classList.add("hidden");
+        thanksEmail.textContent = email;
+        thanks.classList.remove("hidden");
+        thanks.classList.add("fade-in");
+      },
+      { once: true }
+    );
+  }
 }
 
 function hideThanksSection() {
   fadeOutThanks();
 
-  thanks.addEventListener(
-    "animationend",
-    () => {
-      thanks.classList.add("hidden");
-      input.value = "";
-      card.classList.remove("hidden");
-      fadeInCard();
-    },
-    { once: true }
-  );
+  if (prefersReducedMotion) {
+    thanks.classList.add("hidden");
+    input.value = "";
+    card.classList.remove("hidden");
+    fadeInCard();
+  } else {
+    thanks.addEventListener(
+      "animationend",
+      () => {
+        thanks.classList.add("hidden");
+        input.value = "";
+        card.classList.remove("hidden");
+        fadeInCard();
+      },
+      { once: true }
+    );
+  }
 }
 
 function changeInputStyleToInvalid() {
