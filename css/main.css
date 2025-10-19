@@ -67,16 +67,6 @@
   background-color: var(--BGCOLOR-MAIN);
 }
 
-.main__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 100vh;
-  max-width: 30.625rem;
-  margin-inline: auto;
-}
-
 .card {
   display: flex;
   flex-direction: column;
@@ -330,12 +320,6 @@
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
 @media screen and (min-width: 48rem) {
-  .main__container {
-    justify-content: center;
-    margin-inline: auto;
-    max-width: none;
-  }
-
   .card {
     flex-direction: column;
     align-items: flex-start;
