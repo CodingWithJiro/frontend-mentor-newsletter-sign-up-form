@@ -133,6 +133,15 @@ ol {
     var(--GRADIENT-COLOR-THANKS-DISMISS-1),
     var(--GRADIENT-COLOR-THANKS-DISMISS-2)
   );
+
+  /* TRANSITIONS */
+  --TRANSITION-BACKGROUND-COLOR: background-color 0.3s ease-in-out;
+  --TRANSITION-COLOR: color 0.3s ease-in-out;
+  --TRANSITION-BORDER-COLOR: border-color 0.3s ease-in-out;
+  --TRANSITION-BOX-SHADOW: box-shadow 0.3s ease-in-out;
+  --TRANSITION-OPACITY: opacity 0.3s ease-in-out;
+  --TRANSITION-TRANSFORM-100MS: transform 0.1s ease-in-out;
+  --TRANSITION-TRANSFORM-150MS: transform 0.15s ease-in-out;
 }
 
 /** || GENERAL STYLES */
