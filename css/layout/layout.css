@@ -1,0 +1,12 @@
+.theme {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .theme {
+    left: auto;
+    right: 1rem;
+  }
+}

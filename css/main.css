@@ -6,14 +6,13 @@
 @import url(./base/variables.css) layer(base);
 @import url(./base/global.css) layer(base);
 
+@import url(./layout/layout.css) layer(layout);
+
 /** || HEADER */
 .theme {
   box-shadow: var(--BOX-SHADOW-THEME);
   background-color: var(--BGCOLOR-THEME);
   border-radius: 50px;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
   padding: 0.5em 1em;
   display: flex;
   flex-direction: row;
@@ -334,11 +333,6 @@
 
 /** || MEDIA QUERY (DEVICE WIDTH) */
 @media screen and (min-width: 48rem) {
-  .theme {
-    left: auto;
-    right: 1rem;
-  }
-
   .main__container {
     justify-content: center;
     margin-inline: auto;
