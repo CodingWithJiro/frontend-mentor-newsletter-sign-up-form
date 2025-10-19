@@ -12,21 +12,6 @@
 @import url(./components/card.css) layer(components);
 @import url(./components/thanks.css) layer(components);
 
-/** || UTILITY CLASSES */
-.sr-only {
-  position: absolute;
-  left: -10000px;
-  width: 1px;
-  height: 1px;
-  top: auto;
-  overflow: hidden;
-}
-
-.hidden {
-  opacity: 0;
-  display: none;
-}
-
 /** || MEDIA QUERY (REDUCED MOTION) */
 /* CHANGE THE DATA BELOW AS NEEDED */
 @media (prefers-reduced-motion: no-preference) {
