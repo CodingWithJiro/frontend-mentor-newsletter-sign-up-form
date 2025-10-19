@@ -96,17 +96,6 @@
   --TRANSITION-TRANSFORM-150MS: transform 0.15s ease-in-out;
 }
 
-/** || GENERAL STYLES */
-html {
-  font-size: var(--FS);
-  font-family: var(--FF);
-}
-
-body {
-  min-height: 100vh;
-  background-color: var(--BGCOLOR);
-}
-
 /** || HEADER */
 .theme {
   box-shadow: var(--BOX-SHADOW-THEME);
