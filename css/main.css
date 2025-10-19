@@ -4,6 +4,8 @@
 
 @import url(./base/fonts.css) layer(base);
 
+@import url(./base/global.css) layer(base);
+
 /** || VARIABLES */
 /* CHANGE THE DATA BELOW AS NEEDED */
 :root {
