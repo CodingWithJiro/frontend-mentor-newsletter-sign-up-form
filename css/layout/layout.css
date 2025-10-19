@@ -10,3 +10,9 @@
     right: 1rem;
   }
 }
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
