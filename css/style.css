@@ -544,12 +544,47 @@ body {
     scroll-behavior: smooth;
   }
 
+  body,
+  .main,
+  .card,
+  .thanks {
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .card__title,
+  .card__description,
+  .card__icon,
+  .card__list-text,
+  .card__label,
+  .card__invalid,
+  .card__input::placeholder,
+  .thanks__title,
+  .thanks__content,
+  .thanks__email {
+    transition: color 0.3s ease-in-out;
+  }
+
   .card__list {
     transition: transform 0.1s ease-in-out;
   }
 
+  .card__input {
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+  }
+
+  .card__input.invalid {
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+  }
+
+  .card__subscribe,
+  .thanks__dismiss {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
   .theme {
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
   }
 
   .theme__button {
