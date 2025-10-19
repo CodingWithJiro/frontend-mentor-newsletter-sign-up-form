@@ -9,6 +9,7 @@
 @import url(./layout/layout.css) layer(layout);
 
 @import url(./components/theme.css) layer(components);
+@import url(./components/card.css) layer(components);
 
 .thanks {
   background-color: var(--BGCOLOR-THANKS);
