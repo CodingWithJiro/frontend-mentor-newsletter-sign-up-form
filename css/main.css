@@ -10,6 +10,7 @@
 
 @import url(./components/theme.css) layer(components);
 @import url(./components/card.css) layer(components);
+@import url(./components/thanks.css) layer(components);
 
 /** || UTILITY CLASSES */
 .dark {
