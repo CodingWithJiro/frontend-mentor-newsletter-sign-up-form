@@ -37,22 +37,7 @@ ol {
   list-style-type: none;
 }
 
-/** || FONTS */
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../assets/fonts/roboto-v49-latin-regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/fonts/roboto-v49-latin-700.woff2") format("woff2");
-}
+@import url(./base/fonts.css) layer(reset);
 
 /** || VARIABLES */
 /* CHANGE THE DATA BELOW AS NEEDED */
