@@ -10,11 +10,6 @@
 
 @import url(./components/theme.css) layer(components);
 
-/** || MAIN */
-.main {
-  background-color: var(--BGCOLOR-MAIN);
-}
-
 .card {
   display: flex;
   flex-direction: column;
