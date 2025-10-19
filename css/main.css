@@ -8,6 +8,8 @@
 
 @import url(./layout/layout.css) layer(layout);
 
+@import url(./components/theme.css) layer(components);
+
 /** || MAIN */
 .main {
   background-color: var(--BGCOLOR-MAIN);
