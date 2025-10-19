@@ -4,6 +4,7 @@
   --FS: 1rem;
 
   /* COLORS */
+  --BGCOLOR: hsl(235, 18%, 26%);
   --BGCOLOR-MAIN: hsl(235, 18%, 26%);
   --BGCOLOR-CARD: #fff;
   --BGCOLOR-CARD-INPUT: #fff;
@@ -40,7 +41,7 @@
   --BGCOLOR-THEME-BUTTON: #f1f1f1;
   --BGCOLOR-THEME-BUTTON-AFTER: hsl(235, 18%, 26%);
   --BORDER-COLOR-THEME-BUTTON: #ccc;
-  --SHADOW-COLOR-THEME: rgba(0, 0, 0, 0.3);
+  --SHADOW-COLOR-THEME: 235deg 26% 16%;
 
   /* BORDERS */
   --BORDER-THEME-BUTTON: 1px solid var(--BORDER-COLOR-THEME-BUTTON);
@@ -48,7 +49,10 @@
   --BORDER-CARD-INPUT-INVALID: 1px solid var(--BORDER-COLOR-CARD-INPUT-INVALID);
 
   /* SHADOWS */
-  --BOX-SHADOW-THEME: 0 0 3px var(--SHADOW-COLOR-THEME);
+  --BOX-SHADOW-THEME: 0.3px 0.5px 0.7px hsl(var(--SHADOW-COLOR-THEME) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--SHADOW-COLOR-THEME) / 0.36),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--SHADOW-COLOR-THEME) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--SHADOW-COLOR-THEME) / 0.36);
   --BOX-SHADOW-CARD: 0.3px 0.5px 0.7px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
     1px 2.1px 2.6px -0.4px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
     1.8px 3.7px 4.6px -0.7px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
