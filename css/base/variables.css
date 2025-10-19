@@ -1,0 +1,89 @@
+:root {
+  /* FONTS */
+  --FF: "Roboto", sans-serif;
+  --FS: 1rem;
+
+  /* COLORS */
+  --BGCOLOR-MAIN: hsl(235, 18%, 26%);
+  --BGCOLOR-CARD: #fff;
+  --BGCOLOR-CARD-INPUT: #fff;
+  --BGCOLOR-CARD-INPUT-INVALID: hsl(4, 100%, 94%);
+  --BGCOLOR-CARD-SUBSCRIBE: hsl(234, 29%, 20%);
+  --BGCOLOR-THANKS: #fff;
+  --BGCOLOR-THANKS-DISMISS: hsl(234, 29%, 20%);
+  --FONT-COLOR-CARD-TITLE: hsl(234, 29%, 20%);
+  --FONT-COLOR-CARD-DESCRIPTION: hsl(235, 18%, 26%);
+  --FONT-COLOR-CARD-LIST-TEXT: hsl(235, 18%, 26%);
+  --FONT-COLOR-CARD-LABEL: hsl(234, 29%, 20%);
+  --FONT-COLOR-CARD-INVALID: hsl(4, 100%, 67%);
+  --FONT-COLOR-CARD-INPUT: hsl(235, 18%, 26%);
+  --FONT-COLOR-CARD-INPUT-INVALID: hsl(4, 100%, 67%);
+  --FONT-COLOR-CARD-INPUT-PLACEHOLDER: hsl(0, 0%, 58%);
+  --FONT-COLOR-CARD-SUBSCRIBE: #fff;
+  --FONT-COLOR-THANKS-TITLE: hsl(234, 29%, 20%);
+  --FONT-COLOR-THANKS-CONTENT: hsl(235, 18%, 26%);
+  --FONT-COLOR-THANKS-EMAIL: hsl(234, 29%, 20%);
+  --FONT-COLOR-THANKS-DISMISS: #fff;
+  --COLOR-CARD-ICON: #ff6155;
+  --BORDER-COLOR-CARD-INPUT: hsl(0, 0%, 58%);
+  --BORDER-COLOR-CARD-INPUT-INVALID: hsl(4, 100%, 67%);
+  --SHADOW-COLOR-CARD: 235deg 26% 16%;
+  --SHADOW-COLOR-THANKS: 235deg 26% 16%;
+  --GRADIENT-COLOR-CARD-SUBSCRIBE-1: #ff5575;
+  --GRADIENT-COLOR-CARD-SUBSCRIBE-2: #ff6b5c;
+  --GRADIENT-COLOR-THANKS-DISMISS-1: #ff5575;
+  --GRADIENT-COLOR-THANKS-DISMISS-2: #ff6b5c;
+
+  /* THEME TOGGLE COLORS */
+  --FONT-COLOR-THEME-ICON-LIGHT: hsl(235, 18%, 26%);
+  --BGCOLOR-THEME: #fff;
+  --BGCOLOR-THEME-BUTTON: #f1f1f1;
+  --BGCOLOR-THEME-BUTTON-AFTER: hsl(235, 18%, 26%);
+  --BORDER-COLOR-THEME-BUTTON: #ccc;
+  --SHADOW-COLOR-THEME: rgba(0, 0, 0, 0.3);
+
+  /* BORDERS */
+  --BORDER-THEME-BUTTON: 1px solid var(--BORDER-COLOR-THEME-BUTTON);
+  --BORDER-CARD-INPUT: 1px solid var(--BORDER-COLOR-CARD-INPUT);
+  --BORDER-CARD-INPUT-INVALID: 1px solid var(--BORDER-COLOR-CARD-INPUT-INVALID);
+
+  /* SHADOWS */
+  --BOX-SHADOW-THEME: 0 0 3px var(--SHADOW-COLOR-THEME);
+  --BOX-SHADOW-CARD: 0.3px 0.5px 0.7px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
+    1px 2.1px 2.6px -0.4px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
+    1.8px 3.7px 4.6px -0.7px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
+    3px 6px 7.5px -1.1px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
+    4.7px 9.4px 11.8px -1.4px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
+    7.3px 14.6px 18.4px -1.8px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
+    11.1px 22.1px 27.8px -2.1px hsl(var(--SHADOW-COLOR-CARD) / 0.21),
+    16.3px 32.5px 40.9px -2.5px hsl(var(--SHADOW-COLOR-CARD) / 0.21);
+  --BOX-SHADOW-THANKS: 0.3px 0.5px 0.7px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    1px 2.1px 2.6px -0.4px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    1.8px 3.7px 4.6px -0.7px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    3px 6px 7.5px -1.1px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    4.7px 9.4px 11.8px -1.4px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    7.3px 14.6px 18.4px -1.8px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    11.1px 22.1px 27.8px -2.1px hsl(var(--SHADOW-COLOR-THANKS) / 0.21),
+    16.3px 32.5px 40.9px -2.5px hsl(var(--SHADOW-COLOR-THANKS) / 0.21);
+
+  /* GRADIENTS */
+  --GRADIENT-CARD-SUBSCRIBE: linear-gradient(
+    to right,
+    var(--GRADIENT-COLOR-CARD-SUBSCRIBE-1),
+    var(--GRADIENT-COLOR-CARD-SUBSCRIBE-2)
+  );
+  --GRADIENT-THANKS-DISMISS: linear-gradient(
+    to right,
+    var(--GRADIENT-COLOR-THANKS-DISMISS-1),
+    var(--GRADIENT-COLOR-THANKS-DISMISS-2)
+  );
+
+  /* TRANSITIONS */
+  --TRANSITION-BACKGROUND-COLOR: background-color 0.3s ease-in-out;
+  --TRANSITION-COLOR: color 0.3s ease-in-out;
+  --TRANSITION-BORDER-COLOR: border-color 0.3s ease-in-out;
+  --TRANSITION-BOX-SHADOW: box-shadow 0.3s ease-in-out;
+  --TRANSITION-OPACITY: opacity 0.3s ease-in-out;
+  --TRANSITION-TRANSFORM-100MS: transform 0.1s ease-in-out;
+  --TRANSITION-TRANSFORM-150MS: transform 0.15s ease-in-out;
+}
