@@ -1,0 +1,136 @@
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body,
+  .main,
+  .card,
+  .thanks {
+    transition: var(--TRANSITION-BACKGROUND-COLOR);
+  }
+
+  .card__title,
+  .card__description,
+  .card__icon,
+  .card__list-text,
+  .card__label,
+  .card__invalid,
+  .card__input::placeholder,
+  .thanks__title,
+  .thanks__content,
+  .thanks__email {
+    transition: var(--TRANSITION-COLOR);
+  }
+
+  .card__list {
+    transition: var(--TRANSITION-TRANSFORM-100MS);
+  }
+
+  .card__input {
+    transition: var(--TRANSITION-BORDER-COLOR), var(--TRANSITION-COLOR),
+      var(--TRANSITION-BACKGROUND-COLOR);
+  }
+
+  .card__input.invalid {
+    transition: var(--TRANSITION-BORDER-COLOR), var(--TRANSITION-COLOR),
+      var(--TRANSITION-BACKGROUND-COLOR);
+  }
+
+  .card__subscribe,
+  .thanks__dismiss {
+    transition: var(--TRANSITION-BACKGROUND-COLOR), var(--TRANSITION-COLOR);
+  }
+
+  .theme {
+    transition: var(--TRANSITION-BOX-SHADOW), var(--TRANSITION-BACKGROUND-COLOR);
+  }
+
+  .theme__button {
+    transition: var(--TRANSITION-BACKGROUND-COLOR),
+      var(--TRANSITION-BORDER-COLOR);
+  }
+
+  .theme__button::after {
+    transition: var(--TRANSITION-TRANSFORM-150MS),
+      var(--TRANSITION-BACKGROUND-COLOR);
+  }
+
+  .theme__icon {
+    transition: var(--TRANSITION-OPACITY);
+  }
+
+  .shake {
+    animation: shake 0.4s ease;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-3px);
+    }
+    40% {
+      transform: translateX(3px);
+    }
+    60% {
+      transform: translateX(-1px);
+    }
+    80% {
+      transform: translateX(1px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .fade-out {
+    animation: fadeOut 0.3s ease-in-out forwards;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 0.3s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    animation: none !important;
+    transition-duration: 0.001ms !important;
+    transition-delay: 0.001ms !important;
+    transition: none !important;
+    caret-color: auto !important;
+  }
+}
