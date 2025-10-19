@@ -11,57 +11,6 @@
 @import url(./components/theme.css) layer(components);
 @import url(./components/card.css) layer(components);
 
-.thanks {
-  background-color: var(--BGCOLOR-THANKS);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-inline: 1.5em;
-  padding-block-start: 9.3em;
-  padding-block-end: 2.5em;
-}
-
-.thanks__icon {
-  margin-block-end: 2.3em;
-}
-
-.thanks__title {
-  color: var(--FONT-COLOR-THANKS-TITLE);
-  font-weight: 700;
-  font-size: clamp(2.5rem, 0.0385rem + 3.8462vw, 3.5rem);
-  line-height: 1;
-  margin-block-end: 0.55em;
-}
-
-.thanks__content {
-  color: var(--FONT-COLOR-THANKS-CONTENT);
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.thanks__email {
-  color: var(--FONT-COLOR-THANKS-EMAIL);
-  font-weight: 700;
-}
-
-.thanks__dismiss {
-  background-color: var(--BGCOLOR-THANKS-DISMISS);
-  width: 100%;
-  padding: 1.075em;
-  border-radius: 8px;
-  user-select: none;
-  cursor: pointer;
-  color: var(--FONT-COLOR-THANKS-DISMISS);
-  font-weight: 700;
-}
-
-.thanks__dismiss:hover,
-.thanks__dismiss:focus-visible {
-  background-image: var(--GRADIENT-THANKS-DISMISS);
-}
-
 /** || UTILITY CLASSES */
 .dark {
   /* COLORS */
@@ -117,24 +66,6 @@
 .hidden {
   opacity: 0;
   display: none;
-}
-
-/** || MEDIA QUERY (DEVICE WIDTH) */
-
-@media screen and (min-width: 64rem) {
-  .thanks {
-    padding-inline: 4rem;
-    padding-block-start: 3rem;
-    padding-block-end: 4rem;
-    max-width: 31.5rem;
-    min-height: 32.5rem;
-    border-radius: 35px;
-    box-shadow: var(--BOX-SHADOW-THANKS);
-  }
-
-  .thanks__title {
-    margin-block-end: 0.4em;
-  }
 }
 
 /** || MEDIA QUERY (REDUCED MOTION) */
