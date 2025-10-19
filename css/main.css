@@ -5,6 +5,7 @@
 @import url(./base/fonts.css) layer(base);
 @import url(./base/variables.css) layer(base);
 @import url(./base/global.css) layer(base);
+@import url(./base/motion.css) layer(base);
 
 @import url(./layout/layout.css) layer(layout);
 
