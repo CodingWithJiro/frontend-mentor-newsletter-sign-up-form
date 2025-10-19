@@ -8,60 +8,6 @@
 
 @import url(./layout/layout.css) layer(layout);
 
-/** || HEADER */
-.theme {
-  box-shadow: var(--BOX-SHADOW-THEME);
-  background-color: var(--BGCOLOR-THEME);
-  border-radius: 50px;
-  padding: 0.5em 1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5em;
-}
-
-.theme__button {
-  border: var(--BORDER-THEME-BUTTON);
-  background-color: var(--BGCOLOR-THEME-BUTTON);
-  border-radius: 100px;
-  width: 2.5rem;
-  height: 1.5rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.theme__button::after {
-  content: "";
-  background-color: var(--BGCOLOR-THEME-BUTTON-AFTER);
-  position: absolute;
-  left: 0;
-  top: 0.225rem;
-  bottom: 0.225rem;
-  width: 1rem;
-  border-radius: 100px;
-  transform: translateX(0.2rem);
-}
-
-.theme__button.active::after {
-  transform: translateX(1.1rem);
-}
-
-.theme__icon {
-  opacity: 1;
-  width: 1.125rem;
-}
-
-.theme__icon--light {
-  color: var(--FONT-COLOR-THEME-ICON-LIGHT);
-}
-
-.theme__icon--dark {
-  color: var(--FONT-COLOR-THEME-ICON-DARK);
-}
-
 /** || MAIN */
 .main {
   background-color: var(--BGCOLOR-MAIN);
