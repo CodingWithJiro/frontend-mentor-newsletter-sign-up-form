@@ -18,18 +18,19 @@
 ![Dynamic Content](https://img.shields.io/badge/Dynamic%20Content-Available-673ab7?style=for-the-badge)
 [![Google Lighthouse](https://img.shields.io/badge/Lighthouse-Audit-00B0FF?style=for-the-badge&logo=lighthouse&logoColor=white)](./assets/downloads/lighthouse-performance-report.pdf)
 
-![Status](https://img.shields.io/badge/status-incomplete-orange)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8cd407b8-3c07-4fa3-8547-0f8b8c92611c/deploy-status)](https://newsletter-form-jiro.netlify.app/)
+![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%207-blue)
 ![Views](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.frontend-mentor-newsletter-sign-up-form&left_text=repo%20views)
 
-## ADD PROJECT SUBTITLE
+## A Newsletter Sign-Up Landing Page for a Fictional Company
 
 | _Mobile Preview (375x812)_                                   | _Desktop Preview (1440x960)_                                    |
 | ------------------------------------------------------------ | --------------------------------------------------------------- |
 | ![Mobile](./assets/img/site-preview-mobile_375x812.png)      | ![Desktop](./assets/img/site-preview-desktop_1440x960.png)      |
 | ![Mobile](./assets/img/site-preview-mobile-dark_375x812.png) | ![Desktop](./assets/img/site-preview-desktop-dark_1440x960.png) |
 
-INSERT A BRIEF DESCRIPTION OF THE PROJECT
+A fully responsive newsletter sign-up form built with semantic HTML, layered CSS architecture, and modular JavaScript.
 
 Created as part of the building challenges from **[Frontend Mentor](https://www.frontendmentor.io/)**.
 
@@ -37,13 +38,22 @@ Created as part of the building challenges from **[Frontend Mentor](https://www.
 
 ## Overview
 
-INSERT PROJECT OVERVIEW (1-2 PARAGRAPHS)
+This project replicates a typical email sign-up flow for a marketing or product landing page and demonstrates how to manage form validation, user feedback, and UI transitions using vanilla JavaScript.
+
+The design emphasizes accessibility, responsive layouts, and theming support, while maintaining pixel-perfect alignment with the reference design.
 
 ---
 
 ## Features
 
-INSERT LIST OF PROJECT FEATURES
+- Email form validation with clear visual feedback
+- Dynamic success message rendered after valid submission
+- Fully responsive layout from mobile-first approach
+- Dark mode toggle with preserved theme preference
+- Accessible form labels, roles, and ARIA attributes
+- Modular CSS structure using `@layer` (reset, base, layout, components, utilities) and `@import` rules
+- Organized JavaScript modules for DOM handling, validation, and state management
+- Smooth motion transitions and focus visibility for accessibility
 
 ---
 
@@ -63,7 +73,12 @@ _This ensures I maintain a professional workflow, even as a solo developer._
 
 ## What I Learned
 
-INSERT LIST OF WHAT I LEARNED MAKING THIS PROJECT
+- How to structure CSS using `@layer` for scalable organization
+- The value of CSS partial files for separating concerns between base, layout, and components
+- Handling form validation and dynamic UI updates without third-party libraries
+- Dynamic importing of long `<svg>` and other HTML snippets into the DOM using JavaScript in `ui.js`
+- Using ARIA roles and focus management for accessible form interactions
+- Practicing granular commits, branch isolation, and documenting pull requests to mirror professional workflows
 
 ---
 
@@ -94,7 +109,7 @@ INSERT LIST OF WHAT I LEARNED MAKING THIS PROJECT
 
 ## Live Demo
 
-Or you can check out the **[live website here](LINK)**
+Or you can check out the **[live website here](https://newsletter-form-jiro.netlify.app/)**
 
 ---
 
