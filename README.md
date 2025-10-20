@@ -29,7 +29,7 @@
 | ![Mobile](./assets/img/site-preview-mobile_375x812.png)      | ![Desktop](./assets/img/site-preview-desktop_1440x960.png)      |
 | ![Mobile](./assets/img/site-preview-mobile-dark_375x812.png) | ![Desktop](./assets/img/site-preview-desktop-dark_1440x960.png) |
 
-INSERT A BRIEF DESCRIPTION OF THE PROJECT
+A fully responsive newsletter sign-up form built with semantic HTML, layered CSS architecture, and modular JavaScript.
 
 Created as part of the building challenges from **[Frontend Mentor](https://www.frontendmentor.io/)**.
 
