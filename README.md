@@ -37,7 +37,9 @@ Created as part of the building challenges from **[Frontend Mentor](https://www.
 
 ## Overview
 
-INSERT PROJECT OVERVIEW (1-2 PARAGRAPHS)
+This project replicates a typical email sign-up flow for a marketing or product landing page and demonstrates how to manage form validation, user feedback, and UI transitions using vanilla JavaScript.
+
+The design emphasizes accessibility, responsive layouts, and theming support, while maintaining pixel-perfect alignment with the reference design.
 
 ---
 
