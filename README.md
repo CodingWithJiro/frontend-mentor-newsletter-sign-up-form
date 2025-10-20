@@ -72,7 +72,12 @@ _This ensures I maintain a professional workflow, even as a solo developer._
 
 ## What I Learned
 
-INSERT LIST OF WHAT I LEARNED MAKING THIS PROJECT
+- How to structure CSS using `@layer` for scalable organization
+- The value of CSS partial files for separating concerns between base, layout, and components
+- Handling form validation and dynamic UI updates without third-party libraries
+- Dynamic importing of long `<svg>` and other HTML snippets into the DOM using JavaScript in `ui.js`
+- Using ARIA roles and focus management for accessible form interactions
+- Practicing granular commits, branch isolation, and documenting pull requests to mirror professional workflows
 
 ---
 
