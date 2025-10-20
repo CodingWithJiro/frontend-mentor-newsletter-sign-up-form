@@ -45,7 +45,14 @@ The design emphasizes accessibility, responsive layouts, and theming support, wh
 
 ## Features
 
-INSERT LIST OF PROJECT FEATURES
+- Email form validation with clear visual feedback
+- Dynamic success message rendered after valid submission
+- Fully responsive layout from mobile-first approach
+- Dark mode toggle with preserved theme preference
+- Accessible form labels, roles, and ARIA attributes
+- Modular CSS structure using `@layer` (reset, base, layout, components, utilities) and `@import` rules
+- Organized JavaScript modules for DOM handling, validation, and state management
+- Smooth motion transitions and focus visibility for accessibility
 
 ---
 
