@@ -22,7 +22,7 @@
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%207-blue)
 ![Views](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.frontend-mentor-newsletter-sign-up-form&left_text=repo%20views)
 
-## ADD PROJECT SUBTITLE
+## A Newsletter Sign-Up Landing Page for a Fictional Company
 
 | _Mobile Preview (375x812)_                                   | _Desktop Preview (1440x960)_                                    |
 | ------------------------------------------------------------ | --------------------------------------------------------------- |
